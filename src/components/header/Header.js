@@ -7,7 +7,7 @@ function Header() {
         <div className="header">
            <img src={logo} alt="logo" className="logo"/>
            <nav>
-               <a href="/shop">Shop</a>
+               <a href="/">Shop</a>
                <a href="/order-review">Order review</a>
                <a href="/manage-inventory">Manage Inventory</a>
            </nav>
