@@ -31,6 +31,7 @@ function Cart(props) {
             <p>Shipping: {shipping}</p>
             <p>Txt: {tax.toFixed(2)}</p>
             <p>Grand Total: {grandTotal.toFixed(2)}</p>
+            {props.children}
         </div>
     )
 }

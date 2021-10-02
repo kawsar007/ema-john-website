@@ -5,6 +5,7 @@ import NotFound from './components/error/NotFound';
 import Header from './components/header/Header';
 import Inventory from './components/inventory/Inventory';
 import OrderReview from './components/orderReview/OrderReview';
+import PlaceOrder from "./components/placeOrder/PlaceOrder";
 import Shop from './components/shop/Shop';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
            </Route>
            <Route path="/manage-inventory">
                <Inventory/>
+           </Route>
+           <Route path="/placeorder">
+               <PlaceOrder/>
            </Route>
            <Route path="">
                <NotFound/>

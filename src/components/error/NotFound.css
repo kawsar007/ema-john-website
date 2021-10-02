@@ -1,0 +1,10 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-title {
+  font-size: 30px;
+  color: red;
+}
