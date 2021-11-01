@@ -1,14 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import useCart from '../../hooks/useCart';
-import useProducts from '../../hooks/useProducts';
 import { deleteFromDb } from '../../utilities/fakedb';
 import Cart from '../cart/Cart';
 import ReviewItem from '../reviewItem/ReviewItem';
 
 function OrderReview() {
-    const [products, setProducts] = useProducts();
-    const [cart, setCart] = useCart(products);
+    // const [products, setProducts] = useProducts();
+    const [cart, setCart] = useCart();
 
     const removeHandler = (key) => {
          const newCart = cart.filter(item => item.key !== key)

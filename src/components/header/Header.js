@@ -13,6 +13,7 @@ function Header() {
                 <Link to="/">Shop</Link>
                 <Link to="/order-review">Order review</Link>
                 <Link to="/manage-inventory">Manage Inventory</Link>
+                {user.email && <Link to="/orders">Orders</Link>}
                 <span style={{color: 'white'}}> {user.displayName} </span>
                 {user.email ? <button onClick={logOut} type="button">Logout</button> : 
                  <Link to="/login">Login</Link>}
